@@ -37,4 +37,11 @@ public class WordTest
         var actual = new Word("chore");
         Assert.AreEqual("00001", guess.CompareTo(actual));
     }
+
+    [Test]
+    public void ShouldReturnMixedResultWhenAnswerIsClose(){
+        var guess = new Word("charm");
+        var actual = new Word("hairy");
+        Assert.AreEqual("01120", guess.CompareTo(actual));
+    }
 }
