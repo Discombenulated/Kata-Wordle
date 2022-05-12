@@ -7,9 +7,9 @@ public class Word
         this.word = word.ToLower();
     }
 
-    public string CompareTo(Word actual)
+    public string CompareTo(Word other)
     {
-        if (this.word == actual.word) return "22222";
-        throw new NotImplementedException();
+        if (this.word == other.word) return "22222";
+        return "00000";
     }
 }
