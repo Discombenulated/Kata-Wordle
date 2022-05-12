@@ -23,4 +23,11 @@ public class WordTest
         var actual = new Word("might");
         Assert.AreEqual("00000", guess.CompareTo(actual));
     }
+
+    [Test]
+    public void ShouldReturnMostly2sWhenMostlySimilarLetters(){
+        var guess = new Word("fight");
+        var actual = new Word("might");
+        Assert.AreEqual("02222", guess.CompareTo(actual));
+    }
 }
