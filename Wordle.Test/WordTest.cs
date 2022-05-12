@@ -30,4 +30,11 @@ public class WordTest
         var actual = new Word("might");
         Assert.AreEqual("02222", guess.CompareTo(actual));
     }
+
+    [Test]
+    public void ShouldReturn1sWhenLetterCorrectButInWrongPlace(){
+        var guess = new Word("stair");
+        var actual = new Word("chore");
+        Assert.AreEqual("00001", guess.CompareTo(actual));
+    }
 }
